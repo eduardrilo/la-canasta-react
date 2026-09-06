@@ -60,11 +60,11 @@ Los datos simulados se encuentran en `src/data/products.ts`. El estado se maneja
 
 ### Vista general
 
-![Vista general de La Canasta](docs/screenshots/vista-general.jpg)
+![Vista general de La Canasta](docs/screenshots/vista-general.png)
 
 ### Búsqueda de productos
 
-![Búsqueda de productos en La Canasta](docs/screenshots/busqueda-productos.jpg)
+![Búsqueda de productos en La Canasta](docs/screenshots/busqueda-productos.png)
 
 ## Datos de las imágenes
 
