@@ -39,7 +39,7 @@ Los datos simulados se encuentran en `src/data/products.ts`. El estado se maneja
 2. Entrar a la carpeta del proyecto:
 
    ```bash
-   cd react-ts
+   cd la-canasta-react
    ```
 
 3. Instalar las dependencias:
