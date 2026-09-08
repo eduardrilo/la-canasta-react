@@ -47,6 +47,6 @@ export const products: Product[] = [
     price: 4490,
     category: 'Desayuno',
     image:
-      'https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1700166703489-1b1c7251dbbd?auto=format&fit=crop&w=800&q=80',
   },
 ]
