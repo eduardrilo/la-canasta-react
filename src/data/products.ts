@@ -15,7 +15,7 @@ export const products: Product[] = [
     price: 5490,
     category: 'Desayuno',
     image:
-      'https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1668510468038-3607aae3f03c?auto=format&fit=crop&w=800&q=80',
   },
   {
     id: 3,
@@ -39,7 +39,7 @@ export const products: Product[] = [
     price: 5990,
     category: 'Desayuno',
     image:
-      'https://images.unsplash.com/photo-1517673132405-a56a62b18caf?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1654600870472-7c4afe2f70e1?auto=format&fit=crop&w=800&q=80',
   },
   {
     id: 6,
