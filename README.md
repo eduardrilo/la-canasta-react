@@ -1,11 +1,13 @@
 # La Canasta
 
-E-commerce simple de productos de despensa. El proyecto fue desarrollado como ejercicio de componentes custom en React, utilizando datos simulados y sin conexión a un backend.
+E-commerce desarrollado en React y TypeScript que obtiene sus productos desde la API pública de DummyJSON.
 
 ## Funcionalidades
 
-- Listado de productos generado con `map` y una `key` única.
+- Listado de productos obtenido desde `https://dummyjson.com/products`.
 - Búsqueda por nombre o categoría.
+- Estado de carga mientras se consulta la API.
+- Mensaje de error con opción para volver a intentar.
 - Contador básico de productos agregados al carrito.
 - Mensaje cuando una búsqueda no tiene resultados.
 - Diseño adaptable a escritorio, tablet y teléfono.
@@ -16,10 +18,12 @@ E-commerce simple de productos de despensa. El proyecto fue desarrollado como ej
 - `SearchBar`: input controlado para buscar productos.
 - `ProductCard`: recibe cada producto mediante props y muestra su información.
 - `ProductList`: recorre el array de productos y renderiza las tarjetas.
+- `Loader`: muestra el estado de carga mientras se consulta la API.
+- `ErrorMessage`: muestra un error si falla la consulta y permite reintentar.
 - `Button`: botón reutilizable con variantes `primary` y `secondary`.
 - `Footer`: contiene la información básica del proyecto.
 
-Los datos simulados se encuentran en `src/data/products.ts`. El estado se maneja con `useState` en `App` y `ProductCard`.
+El consumo de la API se realiza con `fetch` dentro de `useEffect`. La aplicación maneja los estados `products`, `loading` y `error`.
 
 ## Tecnologías usadas
 
@@ -27,6 +31,7 @@ Los datos simulados se encuentran en `src/data/products.ts`. El estado se maneja
 - TypeScript
 - Vite
 - CSS
+- DummyJSON API
 
 ## Cómo ejecutar el proyecto
 
@@ -66,6 +71,4 @@ Los datos simulados se encuentran en `src/data/products.ts`. El estado se maneja
 
 ![Búsqueda de productos en La Canasta](docs/screenshots/busqueda-productos.png)
 
-## Datos de las imágenes
-
-Las fotografías de los productos se cargan desde [Unsplash](https://unsplash.com/).
+Las capturas deben actualizarse antes de la entrega final para mostrar los productos obtenidos desde la API.
