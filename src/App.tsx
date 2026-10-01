@@ -82,7 +82,8 @@ function App() {
                   {filteredProducts.length}{' '}
                   {filteredProducts.length === 1
                     ? 'producto encontrado'
-                    : 'productos encontrados'}
+                    : 'productos encontrados'}{' '}
+                  · Precios referenciales en USD.
                 </p>
               )}
             </div>
