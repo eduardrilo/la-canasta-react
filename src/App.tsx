@@ -32,7 +32,11 @@ function App() {
       }
 
       const data: ProductsResponse = await response.json()
-      setProducts(data.products)
+      const groceryProducts = data.products.filter(
+        (product) => product.category === 'groceries',
+      )
+
+      setProducts(groceryProducts)
     } catch {
       setError('No pudimos cargar los productos. Intenta nuevamente.')
     } finally {
@@ -61,8 +65,8 @@ function App() {
       <main>
         <section className="intro container" aria-labelledby="page-title">
           <p className="eyebrow">Productos seleccionados</p>
-          <h1 id="page-title">Encuentra lo que necesitas</h1>
-          <p>Explora nuestro catálogo y busca productos por nombre o categoría.</p>
+          <h1 id="page-title">Lo básico para tu despensa</h1>
+          <p>Encuentra alimentos y productos para tu cocina en un solo lugar.</p>
         </section>
 
         <section className="catalog container" aria-labelledby="catalog-title">
@@ -94,7 +98,7 @@ function App() {
           ) : (
             <div className="empty-state">
               <h3>No encontramos productos</h3>
-              <p>Prueba con otro nombre o categoría.</p>
+              <p>Prueba con otro nombre.</p>
               <Button variant="secondary" onClick={() => setSearchTerm('')}>
                 Limpiar búsqueda
               </Button>
