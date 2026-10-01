@@ -32,9 +32,13 @@ function App() {
       }
 
       const data: ProductsResponse = await response.json()
-      const groceryProducts = data.products.filter(
-        (product) => product.category === 'groceries',
-      )
+      const groceryProducts = data.products.filter((product) => {
+        const productName = product.title.toLowerCase()
+        const isPetFood =
+          productName.includes('cat food') || productName.includes('dog food')
+
+        return product.category === 'groceries' && !isPetFood
+      })
 
       setProducts(groceryProducts)
     } catch {
