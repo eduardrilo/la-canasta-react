@@ -341,3 +341,50 @@ main {
     gap: 8px;
   }
 }
+
+
+.loader,
+.error-message {
+  padding: 48px 24px;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #d5d2c8;
+  border-radius: 7px;
+}
+
+.loader {
+  display: grid;
+  justify-items: center;
+  gap: 14px;
+}
+
+.loader p,
+.error-message p {
+  margin: 0;
+  color: #666860;
+}
+
+.loader__spinner {
+  width: 36px;
+  height: 36px;
+  border: 4px solid #d7ddd5;
+  border-top-color: #315c3d;
+  border-radius: 50%;
+  animation: spin 800ms linear infinite;
+}
+
+.error-message h3 {
+  margin: 0 0 10px;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.45rem;
+}
+
+.error-message .button {
+  margin-top: 20px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

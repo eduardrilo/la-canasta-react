@@ -12,7 +12,7 @@ function SearchBar({ value, onChange }: SearchBarProps) {
         type="search"
         value={value}
         onChange={(event) => onChange(event.target.value)}
-        placeholder="Ejemplo: café o desayuno"
+        placeholder="Ejemplo: leche, aceite o café"
       />
     </div>
   )

@@ -9,8 +9,7 @@ interface ProductCardProps {
 
 const priceFormatter = new Intl.NumberFormat('es-CL', {
   style: 'currency',
-  currency: 'CLP',
-  maximumFractionDigits: 0,
+  currency: 'USD',
 })
 
 function ProductCard({ product, onAdd }: ProductCardProps) {
@@ -25,11 +24,11 @@ function ProductCard({ product, onAdd }: ProductCardProps) {
 
   return (
     <article className="product-card">
-      <img src={product.image} alt={product.name} loading="lazy" />
+      <img src={product.thumbnail} alt={product.title} loading="lazy" />
 
       <div className="product-card__content">
         <span className="product-card__category">{product.category}</span>
-        <h3>{product.name}</h3>
+        <h3>{product.title}</h3>
         <p className="product-card__price">{priceFormatter.format(product.price)}</p>
 
         <Button onClick={handleAdd} disabled={added}>
