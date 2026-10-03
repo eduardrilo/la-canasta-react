@@ -71,4 +71,3 @@ El consumo de la API se realiza con `fetch` dentro de `useEffect`. La aplicació
 
 ![Búsqueda de productos en La Canasta](docs/screenshots/busqueda-productos.png)
 
-Las capturas deben actualizarse antes de la entrega final para mostrar los productos obtenidos desde la API.
